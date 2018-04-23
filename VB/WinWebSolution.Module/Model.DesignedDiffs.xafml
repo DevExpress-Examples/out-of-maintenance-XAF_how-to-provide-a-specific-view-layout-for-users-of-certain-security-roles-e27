@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application Title="WinWebSolution" Logo="ExpressAppLogo">
+	<NavigationItems>
+		<Item Id="Default" Index="0" IsNewNode="True">
+			<Item Id="Task_ListView" View="Task_ListView" Index="0" IsNewNode="True" />
+		</Item>
+	</NavigationItems>
+	<Views>
+		<DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+			<Items>
+				<StaticText Id="PasswordHint" Text="(To log on, leave the Password field empty and type Sam or John in the User Name field)" IsNewNode="True" />
+			</Items>
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="RootGroup">
+						<LayoutGroup Id="EditorsGroup">
+							<LayoutGroup Id="Editors">
+								<LayoutItem Id="PasswordHint" ShowCaption="True" Index="3" IsNewNode="True" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Task_DetailView_Administrators" ModelClass="DevExpress.Persistent.BaseImpl.Task" Caption="Task Detail View for Administrators" AllowEdit="True" AllowDelete="True" AllowNew="True" IsNewNode="True">
+			<Items IsNewNode="True">
+				<PropertyEditor PropertyName="AssignedTo" IsNewNode="True" />
+				<PropertyEditor PropertyName="DateCompleted" IsNewNode="True" />
+				<PropertyEditor PropertyName="Description" IsNewNode="True" />
+				<PropertyEditor PropertyName="DueDate" IsNewNode="True" />
+				<PropertyEditor PropertyName="PercentCompleted" IsNewNode="True" />
+				<PropertyEditor PropertyName="StartDate" IsNewNode="True" />
+				<PropertyEditor PropertyName="Status" IsNewNode="True" />
+				<PropertyEditor PropertyName="Subject" IsNewNode="True" />
+			</Items>
+			<Layout IsNewNode="True">
+				<LayoutGroup Id="Main" Index="0" Direction="Vertical" ShowCaption="False" Caption="Main" IsNewNode="True">
+					<LayoutGroup Id="SimpleEditors" Index="0" Direction="Vertical" ShowCaption="False" Caption="Simple Editors" IsNewNode="True">
+						<LayoutGroup Id="Task" Index="0" Direction="Horizontal" ShowCaption="True" Caption="Task" IsNewNode="True">
+							<LayoutGroup Id="Task_col1" Index="0" Direction="Vertical" ShowCaption="False" Caption="Task_col1" IsNewNode="True">
+								<LayoutItem Id="AssignedTo" ShowCaption="True" Index="3" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="DueDate" ShowCaption="True" Index="1" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="StartDate" ShowCaption="True" Index="2" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="Subject" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutGroup Id="Task_col2" Index="1" Direction="Vertical" ShowCaption="False" Caption="Task_col2" IsNewNode="True">
+								<LayoutItem Id="DateCompleted" ShowCaption="True" Index="2" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="PercentCompleted" ShowCaption="True" Index="1" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="Status" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<LayoutGroup Id="SizeableEditors" Index="1" Direction="Vertical" ShowCaption="False" Caption="Sizeable Editors" IsNewNode="True">
+						<LayoutItem Id="Description" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Task_DetailView_Users" ModelClass="DevExpress.Persistent.BaseImpl.Task" Caption="Task Detail View for Users" AllowEdit="False" AllowDelete="False" AllowNew="False" IsNewNode="True">
+			<Items IsNewNode="True">
+				<PropertyEditor PropertyName="AssignedTo" IsNewNode="True" />
+				<PropertyEditor PropertyName="DateCompleted" IsNewNode="True" />
+				<PropertyEditor PropertyName="Description" IsNewNode="True" />
+				<PropertyEditor PropertyName="DueDate" IsNewNode="True" />
+				<PropertyEditor PropertyName="PercentCompleted" IsNewNode="True" />
+				<PropertyEditor PropertyName="StartDate" IsNewNode="True" />
+				<PropertyEditor PropertyName="Status" IsNewNode="True" />
+				<PropertyEditor PropertyName="Subject" IsNewNode="True" />
+			</Items>
+			<Layout IsNewNode="True">
+				<LayoutGroup Id="Main" Index="0" Direction="Vertical" ShowCaption="False" Caption="Main" IsNewNode="True">
+					<LayoutGroup Id="SimpleEditors" Index="0" Direction="Vertical" ShowCaption="False" Caption="Simple Editors" IsNewNode="True">
+						<LayoutGroup Id="Task" Index="0" Direction="Horizontal" ShowCaption="True" Caption="Task" IsNewNode="True">
+							<LayoutGroup Id="Task_col1" Index="0" Direction="Vertical" ShowCaption="False" Caption="Task_col1" IsNewNode="True">
+								<LayoutItem Id="AssignedTo" ShowCaption="True" Index="3" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="DueDate" ShowCaption="True" Index="1" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="StartDate" ShowCaption="True" Index="2" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="Subject" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutGroup Id="Task_col2" Index="1" Direction="Vertical" ShowCaption="False" Caption="Task_col2" IsNewNode="True">
+								<LayoutItem Id="DateCompleted" ShowCaption="True" Index="2" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="PercentCompleted" ShowCaption="True" Index="1" CaptionLocation="Default" IsNewNode="True" />
+								<LayoutItem Id="Status" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<LayoutGroup Id="SizeableEditors" Index="1" Direction="Vertical" ShowCaption="False" Caption="Sizeable Editors" IsNewNode="True">
+						<LayoutItem Id="Description" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<ListView Id="Task_ListView_Administrators" ModelClass="DevExpress.Persistent.BaseImpl.Task" IsGroupPanelVisible="False" AutoExpandAllGroups="False" IsFooterVisible="True" Caption="Task List View for Administrators" AllowEdit="True" IsNewNode="True">
+			<Columns IsNewNode="True">
+				<ColumnInfo PropertyName="AssignedTo" Width="70" Index="3" IsNewNode="True" />
+				<ColumnInfo PropertyName="DateCompleted" Width="70" Index="6" IsNewNode="True" />
+				<ColumnInfo PropertyName="Description" Width="70" Index="-1" IsNewNode="True" />
+				<ColumnInfo PropertyName="DueDate" Width="70" Index="1" IsNewNode="True" />
+				<ColumnInfo PropertyName="PercentCompleted" Width="50" Index="5" IsNewNode="True" />
+				<ColumnInfo PropertyName="StartDate" Width="70" Index="2" IsNewNode="True" />
+				<ColumnInfo PropertyName="Status" Width="70" Index="4" IsNewNode="True" />
+				<ColumnInfo PropertyName="Subject" Width="400" Index="0" SortIndex="0" SortOrder="Ascending" IsNewNode="True" />
+			</Columns>
+			<SplitLayout Direction="Horizontal" IsNewNode="True" />
+		</ListView>
+		<ListView Id="Task_ListView_Users" ModelClass="DevExpress.Persistent.BaseImpl.Task" IsGroupPanelVisible="False" AutoExpandAllGroups="False" IsFooterVisible="True" Caption="Task List View for Users" AllowDelete="False" AllowNew="False" IsNewNode="True">
+			<Columns IsNewNode="True">
+				<ColumnInfo PropertyName="AssignedTo" Width="70" Index="3" IsNewNode="True" />
+				<ColumnInfo PropertyName="DateCompleted" Width="70" Index="6" IsNewNode="True" />
+				<ColumnInfo PropertyName="Description" Width="70" Index="-1" IsNewNode="True" />
+				<ColumnInfo PropertyName="DueDate" Width="70" Index="1" IsNewNode="True" />
+				<ColumnInfo PropertyName="PercentCompleted" Width="50" Index="5" IsNewNode="True" />
+				<ColumnInfo PropertyName="StartDate" Width="70" Index="2" IsNewNode="True" />
+				<ColumnInfo PropertyName="Status" Width="70" Index="4" IsNewNode="True" />
+				<ColumnInfo PropertyName="Subject" Width="400" Index="0" SortIndex="0" SortOrder="Ascending" IsNewNode="True" />
+			</Columns>
+			<SplitLayout Direction="Horizontal" IsNewNode="True" />
+		</ListView>
+	</Views>
+</Application>
