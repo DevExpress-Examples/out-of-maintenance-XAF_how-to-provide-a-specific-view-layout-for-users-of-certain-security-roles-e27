@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="E274" Logo="ExpressAppLogo">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="15.1.10.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Contact_DetailView_Administrators" ClassName="E274.Module.BusinessObjects.Contact" IsNewNode="True">
+      <Items IsNewNode="True">
+        <StaticText Id="@e48aeec6-341b-4007-9387-3690ec391f5f" Text="This is a full View" IsNewNode="True" />
+        <PropertyEditor Id="Address1" PropertyName="Address1" IsNewNode="True" />
+        <PropertyEditor Id="Address2" PropertyName="Address2" IsNewNode="True" />
+        <PropertyEditor Id="Birthday" PropertyName="Birthday" IsNewNode="True" />
+        <PropertyEditor Id="DisplayName" PropertyName="DisplayName" IsNewNode="True" />
+        <PropertyEditor Id="Email" PropertyName="Email" IsNewNode="True" />
+        <PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+        <PropertyEditor Id="FullName" PropertyName="FullName" IsNewNode="True" />
+        <PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+        <PropertyEditor Id="MiddleName" PropertyName="MiddleName" IsNewNode="True" />
+        <PropertyEditor Id="PhoneNumbers" PropertyName="PhoneNumbers" View="Party_PhoneNumbers_ListView" IsNewNode="True" />
+        <PropertyEditor Id="Photo" PropertyName="Photo" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="43.97905759162304" IsNewNode="True">
+            <LayoutItem Id="@e48aeec6-341b-4007-9387-3690ec391f5f" ViewItem="@e48aeec6-341b-4007-9387-3690ec391f5f" Index="0" RelativeSize="12.698412698412698" IsNewNode="True" />
+            <LayoutGroup Id="Person" Index="1" Direction="Horizontal" ShowCaption="True" RelativeSize="44.444444444444443" IsNewNode="True">
+              <LayoutGroup Id="Person_col1" Index="0" ShowCaption="False" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="FirstName" ViewItem="FirstName" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="LastName" ViewItem="LastName" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                <LayoutItem Id="MiddleName" ViewItem="MiddleName" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Person_col2" Index="1" ShowCaption="False" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Birthday" ViewItem="Birthday" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="FullName" ViewItem="FullName" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                <LayoutItem Id="Email" ViewItem="Email" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Party" Index="2" ShowCaption="False" RelativeSize="42.857142857142854" IsNewNode="True">
+              <LayoutItem Id="Photo" ViewItem="Photo" Index="0" RelativeSize="27.777777777777779" IsNewNode="True" />
+              <LayoutItem Id="Address1" ViewItem="Address1" Index="1" RelativeSize="22.222222222222221" IsNewNode="True" />
+              <LayoutItem Id="Address2" ViewItem="Address2" Index="2" RelativeSize="22.222222222222221" IsNewNode="True" />
+              <LayoutItem Id="DisplayName" ViewItem="DisplayName" Index="3" RelativeSize="27.777777777777779" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="PhoneNumbers_Group" Index="1" Direction="Vertical" ShowCaption="True" RelativeSize="56.02094240837696" IsNewNode="True">
+            <LayoutItem Id="PhoneNumbers" ViewItem="PhoneNumbers" Index="0" RelativeSize="100" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Contact_DetailView_Users" ClassName="E274.Module.BusinessObjects.Contact" AllowEdit="False" AllowNew="False" IsNewNode="True">
+      <Items IsNewNode="True">
+        <StaticText Id="@9474bdcc-463e-4f77-9b97-a2f96067143b" Text="This is a User's View" IsNewNode="True" />
+        <PropertyEditor Id="Address1" PropertyName="Address1" IsNewNode="True" />
+        <PropertyEditor Id="Address2" PropertyName="Address2" IsNewNode="True" />
+        <PropertyEditor Id="Birthday" PropertyName="Birthday" IsNewNode="True" />
+        <PropertyEditor Id="DisplayName" PropertyName="DisplayName" IsNewNode="True" />
+        <PropertyEditor Id="Email" PropertyName="Email" IsNewNode="True" />
+        <PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+        <PropertyEditor Id="FullName" PropertyName="FullName" IsNewNode="True" />
+        <PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+        <PropertyEditor Id="MiddleName" PropertyName="MiddleName" IsNewNode="True" />
+        <PropertyEditor Id="PhoneNumbers" PropertyName="PhoneNumbers" View="Party_PhoneNumbers_ListView" IsNewNode="True" />
+        <PropertyEditor Id="Photo" PropertyName="Photo" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+            <LayoutGroup Id="Person" Index="0" Direction="Horizontal" ShowCaption="True" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Person_col1" Index="0" ShowCaption="False" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="FirstName" ViewItem="FirstName" Index="0" RelativeSize="4.507042253521127" IsNewNode="True" />
+                <LayoutItem Id="LastName" ViewItem="LastName" Index="1" RelativeSize="3.380281690140845" IsNewNode="True" />
+                <LayoutItem Id="MiddleName" ViewItem="MiddleName" Index="2" RelativeSize="92.112676056338032" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Person_col2" Index="1" ShowCaption="False" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Birthday" ViewItem="Birthday" Index="0" RelativeSize="4.507042253521127" IsNewNode="True" />
+                <LayoutItem Id="FullName" ViewItem="FullName" Index="1" RelativeSize="3.380281690140845" IsNewNode="True" />
+                <LayoutItem Id="Email" ViewItem="Email" Index="2" RelativeSize="92.112676056338032" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Contact_ListView_Administrators" ClassName="E274.Module.BusinessObjects.Contact" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Address1" PropertyName="Address1" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Address2" PropertyName="Address2" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="DisplayName" PropertyName="DisplayName" Width="400" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Photo" PropertyName="Photo" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FullName" PropertyName="FullName" Width="400" SortIndex="0" SortOrder="Ascending" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="FirstName" PropertyName="FirstName" Width="70" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="LastName" PropertyName="LastName" Width="70" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="MiddleName" PropertyName="MiddleName" Width="70" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Birthday" PropertyName="Birthday" Width="70" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="Email" PropertyName="Email" Width="70" Index="5" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Contact_ListView_Users" ClassName="E274.Module.BusinessObjects.Contact" AllowNew="False" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Address1" PropertyName="Address1" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Address2" PropertyName="Address2" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="DisplayName" PropertyName="DisplayName" Width="400" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Email" PropertyName="Email" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Photo" PropertyName="Photo" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FullName" PropertyName="FullName" Width="400" SortIndex="0" SortOrder="Ascending" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="FirstName" PropertyName="FirstName" Width="70" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="LastName" PropertyName="LastName" Width="70" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="MiddleName" PropertyName="MiddleName" Width="70" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Birthday" PropertyName="Birthday" Width="70" Index="4" IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

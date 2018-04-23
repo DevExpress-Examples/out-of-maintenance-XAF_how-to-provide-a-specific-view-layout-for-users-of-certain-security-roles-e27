@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options Skin="Visual Studio 2013 Blue" UIType="TabbedMDI" FormStyle="Ribbon">
+    <RibbonOptions RibbonControlStyle="Office2013" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="15.1.10.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="15.1.10.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Contact_DetailView_Users">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="AlignWithChildren">
+            <LayoutItem Id="@9474bdcc-463e-4f77-9b97-a2f96067143b" ViewItem="@9474bdcc-463e-4f77-9b97-a2f96067143b" Index="0" RelativeSize="5.4054054054054053" IsNewNode="True" />
+            <LayoutGroup Id="Person" Index="1" RelativeSize="94.5945945945946">
+              <LayoutGroup Id="Person_col1">
+                <LayoutItem Id="FirstName" RelativeSize="6.0606060606060606" />
+                <LayoutItem Id="LastName" RelativeSize="4.5454545454545459" />
+                <LayoutItem Id="MiddleName" RelativeSize="89.393939393939391" />
+              </LayoutGroup>
+              <LayoutGroup Id="Person_col2">
+                <LayoutItem Id="Birthday" RelativeSize="6.0606060606060606" />
+                <LayoutItem Id="FullName" RelativeSize="4.5454545454545459" />
+                <LayoutItem Id="Email" RelativeSize="89.393939393939391" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
