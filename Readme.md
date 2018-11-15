@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Model.DesignedDiffs.xafml](./CS/WinWebSolution.Module/Model.DesignedDiffs.xafml) (VB: [Model.DesignedDiffs.xafml](./VB/WinWebSolution.Module/Model.DesignedDiffs.xafml))
+* [SecuritySystemHelper.cs](./CS/WinWebSolution.Module/SecuritySystemHelper.cs) (VB: [SecuritySystemHelper.vb](./VB/WinWebSolution.Module/SecuritySystemHelper.vb))
+* [ShowViewAgainstRoleViewController.cs](./CS/WinWebSolution.Module/ShowViewAgainstRoleViewController.cs) (VB: [ShowViewAgainstRoleViewController.vb](./VB/WinWebSolution.Module/ShowViewAgainstRoleViewController.vb))
+<!-- default file list end -->
 # How to provide a specific View layout for users of certain security roles
 
 
