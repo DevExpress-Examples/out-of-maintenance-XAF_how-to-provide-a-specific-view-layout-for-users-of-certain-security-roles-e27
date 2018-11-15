@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomizeViewAgainstRoleMainWindowController.cs](./CS/E274.Module/Controllers/CustomizeViewAgainstRoleMainWindowController.cs) (VB: [CustomizeViewAgainstRoleMainWindowController.vb](./VB/E274.Module/Controllers/CustomizeViewAgainstRoleMainWindowController.vb))
+<!-- default file list end -->
 # How to provide a specific View layout for users of certain security roles
 
 
